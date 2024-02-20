@@ -26,7 +26,7 @@ int main() {
   
   myfile << "# Project-Array" << endl;
   myfile << "## Для всех тестов взято значение k=2" << endl;
-  myfile << "| N | Ответ | Время рассчета |" << endl;
+  myfile << "| N | Ответ | Время рассчета (сек) |" << endl;
   myfile << "|-|-|-|" << endl;
   
   for (int i = 0; i < 7; i++) {
@@ -37,7 +37,7 @@ int main() {
     diff = end - start;
     
     cout << "Survivor: " << a << " Time taken: " << diff << " seconds" << endl;
-    myfile << "|" << i << " | " << a << " | " << diff << "|" << endl;
+    myfile << "|" << arr[i] << " | " << a << " | " << diff << "|" << endl;
   }
   
   myfile.close();
