@@ -26,7 +26,7 @@ int answer(int N, int k) {
   return arr[0];
 }
 int main() {
-  int arr[7] = {1000, 5000, 10000, 50000, 100000, 500000, 1000000};
+  int arr[8] = {1000, 5000, 10000, 50000, 100000, 500000, 1000000, 2000000};
   int k = 2;
   time_t start, end, diff;
   ofstream myfile("readme.md");
@@ -36,7 +36,7 @@ int main() {
   myfile << "| N | Ответ | Время рассчета (сек) |" << endl;
   myfile << "|-|-|-|" << endl;
   
-  for (int i = 0; i < 7; i++) {
+  for (int i = 0; i < 8; i++) {
     time(&start);
     int a = answer(arr[i], k);
     time(&end);
